@@ -14,32 +14,6 @@ html{
 
 
 :root {
-  --color-primary: #4E2FD2; 
-  --color-success: #0AA288;  
-
-  --color-text: #1F1F1FBF;  
-  --color-text-dark: #0B0D10;     
-  --color-text-strike: #575757; 
-  --color-text-underline: #484848;
-  --color-text-muted: #A8B2BD; 
-  --color-text-price: #575757;    
-  --color-text-info: #0000EE 
-  --color-text-danger: #D8392B;
-  
-  --color-bg: #ffffff;         
-  --color-bg-step: #f3f6fd;       
-  --color-bg-highlight: #EDF4FF;    
-  --color-bg-btn: #F0F4F7;
-  
-  --color-border: #1F1F1F;   
-  --color-border-light: #CED6DE;
-  --color-border-active: #4E2FD2B2;
-
-  --color-btn-inactive-border:#E6EBF0;
-  --color-btn-inactive-text: #CED6DE
-  --color-btn-active-border: #CCCCCC;
-  --color-btn-active-text:#525963;
-
 
   
   color: var(--color-text);
