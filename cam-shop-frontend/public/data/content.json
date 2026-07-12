@@ -1,0 +1,21 @@
+{
+    "review":{
+        "label": "REVIEW",
+        "title" : "Your security system",
+        "description": "Review your personalized protection system designed to keep what matters most safe.",
+        "shipping":{
+            "icon": "/assets/vectors/truck.svg",
+            "price": 0,
+            "oldPrice": 5.99
+        },
+        "checkout":{
+            "title": "30-day hassle-free returns",
+            "description": "If you're not totally in love with the product, we will refund you 100%.",
+            "image": "/assets/images/misc/Satisfaction Badge-05 1.png",
+            "image-label": "as low as $19.19/mo",
+            "savings": "Congrats! You're saving {{amount}} on your security bundle!",
+            "button": "Checkout",
+            "save": "Save my system for later"
+        }
+    }
+}

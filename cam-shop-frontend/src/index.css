@@ -1,0 +1,579 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+html{
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  font-family: 'Gilroy-Bold';
+}
+
+
+
+:root {
+  --color-primary: #4E2FD2; 
+  --color-success: #0AA288;  
+
+  --color-text: #1F1F1FBF;  
+  --color-text-dark: #0B0D10;     
+  --color-text-strike: #575757; 
+  --color-text-underline: #484848;
+  --color-text-muted: #A8B2BD; 
+  --color-text-price: #575757;    
+  --color-text-info: #0000EE 
+  --color-text-danger: #D8392B;
+  
+  --color-bg: #ffffff;         
+  --color-bg-step: #f3f6fd;       
+  --color-bg-highlight: #EDF4FF;    
+  --color-bg-btn: #F0F4F7;
+  
+  --color-border: #1F1F1F;   
+  --color-border-light: #CED6DE;
+  --color-border-active: #4E2FD2B2;
+
+  --color-btn-inactive-border:#E6EBF0;
+  --color-btn-inactive-text: #CED6DE
+  --color-btn-active-border: #CCCCCC;
+  --color-btn-active-text:#525963;
+
+
+  
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-family: 'Gilroy-Bold';
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  padding-top: 29px;
+  padding-inline: 4vw;
+  gap: 2vw;
+}
+
+
+button, a, input{
+  cursor: pointer;
+}
+
+h1, h2{
+  font-weight: 400;
+}
+
+h3{
+  font-family: 'Gilroy-Bold';
+  font-weight: 400;
+  color: #1F1F1F;
+}
+/* PRODUCT CARD START PRODUCT CARD START PRODUCT CARD START PRODUCT CARD START PRODUCT CARD START PRODUCT CARD START PRODUCT CARD START  */
+.productCard {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 11px ;
+  width:360px;
+  border-radius: 11px;
+  border: solid 2px transparent;
+  background-color: #fff;
+}
+
+
+.productCard p{
+  font-family: 'Gilroy-Medium';
+  font-size: 0.75rem;
+}
+a{
+  font-size: 0.75rem;
+}
+.productCard.highlight{
+  border-color: var(--color-border-active);
+}
+.productCard .left{
+  width: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.productCard img{
+  max-width: 101px;
+  
+}
+
+.productCard .badge{
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+ background-color: var(--color-primary);
+ font-family: 'Gilroy-bold';
+ font-size: 0.75rem;
+ color: white;
+
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+
+}
+
+
+
+.productCard .controller{
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+}
+
+
+.controller button{
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  color: #525963;
+  background-color: #F0F4F7;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+.controller button:disabled{
+  color: #CED6DE;
+
+  background-color:transparent;
+  border: 2px solid #CED6DE;
+}
+.productCard .variants{
+  display: flex;
+  gap: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.productCard .variants button{
+  font-family: 'Gilroy-Medium';
+  display: flex;
+  padding: 5.5px;
+  background-color: transparent;
+  align-items: center;
+  border: 0.5px solid #ccc;
+  border-radius: 2px;
+  font-size: 0.625rem;
+
+}
+
+.productCard .variants button.highlight{
+  border: 0.5px solid #0AA288;
+  background-color: #1DF0BB0A;
+ 
+
+}
+
+.productCard .variants img{
+  width: 22px;
+}
+.productCard .controller{
+  display: flex;
+  gap: 10px;
+  padding: 7px;
+  
+}
+
+.prices{
+  font-family: 'Gilroy-Regular';
+  color: #575757;
+}
+
+.prices .oldPrice{
+  color: #D8392B;
+  text-decoration: line-through;
+}
+
+.productCard .bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  
+}
+/* ACCORDION PANEL START ACCORDION PANEL START ACCORDION PANEL START ACCORDION PANEL START ACCORDION PANEL START ACCORDION PANEL START ACCORDION PANEL START ACCORDION PANEL START ACCORDION PANEL START  */
+.accordion{
+  /* width: 53vw; */
+  flex: 1.9;
+}
+
+.accordion-step.active{
+  background-color: #EDF4FF;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.accordion-step.active .step-header{
+  border-bottom: 0.5px solid transparent;
+  
+}
+.accordion-step{
+  
+  margin-bottom: 13px;
+}
+
+.step-no{
+  padding-left: 15px;
+  font-family: 'Gilroy-Medium';
+  font-size: 0.75rem;
+}
+
+.step-header{
+  width: 100%;
+  background-color: transparent;
+  border-width: 0.5px 0px;
+  border-color: #1F1F1F;
+  font-size: 1.375rem;
+  font-family: 'Gilroy-bold';
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+  gap: 8px;
+}
+
+
+
+.header-right{
+  color: #4E2FD2;
+  font-size: 0.875rem;
+  font-family: 'Gilroy-Medium';
+  display: flex;
+  gap: 4px;
+}
+
+.accordion .products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding-inline:15px ;
+}
+
+.accordion  .next-buttons-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.accordion  .next-buttons-container button{
+  font-family: 'Gilroy-Bold';
+  font-size: 1.125rem;
+  color: #4E2FD2;
+  background-color: transparent;
+  border: 1px solid #4E2FD2;
+  padding: 5px 24px;
+  border-radius: 7px;
+}
+/* REVIEW PANEL START REVIEW PANEL START REVIEW PANEL START REVIEW PANEL START REVIEW PANEL START REVIEW PANEL START */
+.review-panel{
+  /* width: 28vw; */
+  flex:1;
+
+  background-color: #EDF4FF ;
+  font-size: 0.875rem;
+  font-family: 'Gilroy-Medium';
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.review-title{
+  font-size: 0.75rem;
+  padding-left: 15px;
+  letter-spacing: 1.6px;
+  border-radius: 10px;
+ color: #484848; 
+}
+
+.review-main{
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.review-main h1{
+  font-family: 'Gilroy-Bold';
+  font-size: 1.375rem;
+  color: #1F1F1F;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.review-main h2{
+  color: #1F1F1FBF;
+  font-size: 0.875rem;
+  font-family: 'Gilroy-Medium';
+  font-style: normal;
+}
+
+.review-categories-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.review-category{
+  border-top:  1px solid #CED6DE ;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px
+}
+.review-category >.label{
+  font-family: 'Gilroy-Regular';
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #A8B2BD;
+}
+
+.category-items{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-cart-item{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content:space-between;
+  font-size: 0.875rem;
+  
+
+}
+
+.review-cart-item button{
+  background-color: #FFFFFF ;
+}
+.review-cart-item button:disabled{
+  background-color: #F1F1F2 ;
+  border: 1px solid #CED6DE;
+  color: #575757;
+}
+
+.review-cart-item .image-container{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #0B0D10 ;
+  font-family: 'Gilroy-Medium';
+}
+
+.review-cart-item img{
+  width: 40px;
+  object-fit:scale-down;
+  background-color: #fff;
+}
+
+
+.review-cart-item .right{
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  align-items:center;
+
+}
+
+.review-cart-item .controller{
+  width: 72px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Gilroy-bold';
+  color: #0B0D10;
+}
+
+.review-cart-item .prices{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  font-size: 0.875rem;
+  font-family: 'Gilroy-Bold';
+  width: 50px;
+  text-align: end;
+  color: #4E2FD2;
+}
+
+.review-cart-item .oldPrice{
+  color: #6F7882;
+  font-family: 'Gilroy-Medium';
+}
+
+.tablet-only{
+  display: none;
+}
+
+.review-footer{
+  display: flex;
+  flex-direction: column ;
+  gap: 8px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 31px;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.checkout-info{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 8px;
+}
+
+.financing{
+  background-color: #4E2FD2;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-family: 'Gilroy-Medium';
+  font-size: 0.75rem ;
+  width: fit-content;
+}
+
+.checkout-info .prices{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.checkout-info .oldPrice{
+  font-family: 'Gilroy-Medium';
+  color: #6F7882;
+  font-size: 1.125rem;
+}
+
+.checkout-info .price{
+  color: #4E2FD2;
+  font-family: 'Gilroy-Bold';
+  font-size: 1.5rem ;
+}
+
+.checkout-badge{
+  width: 78px ;
+}
+
+.btn-checkout{
+  background-color: #4E2FD2;
+  color: #fff;
+  border: 0;
+  border-radius: 4px ;
+  padding: 13px 16px;
+  font-family: 'Gilroy-Bold';
+  font-size: 1.0625rem;
+}
+.savings-banner{
+  color: #0AA288 ;
+  font-weight: 'Gilroy-Bold';
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.btn-save{
+  color: #484848;
+  background-color: transparent;
+  border: 0;
+  text-decoration: underline ;
+  font-style: italic;
+  font-size: 0.875rem;
+  width: fit-content;
+  align-self: center;
+}
+
+.phone-only{
+  display: none;
+}
+
+@media (max-width: 1386px) {
+  /* tablets and small desktops */
+  
+  main{
+    padding: 0;
+  }
+  
+  
+} 
+@media (max-width: 1274px) {
+  .productCard{
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .productCard .prices{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+@media (max-width: 892px) {
+  /* phones and maybe tablets? */
+  html{
+    font-size: 14px;
+  }
+  main{
+    flex-wrap: wrap;
+  }
+  .phone-only{
+    display: block;
+    color: #1F1F1F;
+    font-size: 2.25rem;
+    font-family: 'Gilroy-Bold';
+    text-align: center;
+    margin: 31px 21px 20px 31px;
+
+  }
+
+  .accordion{
+    width: 100vw;
+    flex: initial;
+  }
+  .review-panel{
+    width: 100vw;
+    flex: initial;
+
+  }
+  .review-cart-item .title{
+    max-width: 200px;
+    gap: 0;
+  }
+  .accordion-step h2{
+    font-size: 1.25rem;
+  }
+} 
+
+
+@media (max-width:320px) {
+  
+  main::before{
+    content: "the app breaks below this width";
+  }
+}
