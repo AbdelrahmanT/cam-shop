@@ -16,8 +16,8 @@ html{
 :root {
 
   
-  color: var(--color-text);
-  background: var(--color-bg);
+  color:#1F1F1FBF;
+  background: #FFF;
   font-family: 'Gilroy-Bold';
 }
 
@@ -65,7 +65,7 @@ a{
   font-size: 0.75rem;
 }
 .productCard.highlight{
-  border-color: var(--color-border-active);
+  border-color: #4E2FD2B2;
 }
 .productCard .left{
   width: fit-content;
@@ -85,7 +85,7 @@ a{
   top: 0;
   left: 0;
   
- background-color: var(--color-primary);
+ background-color: #4E2FD2;
  font-family: 'Gilroy-bold';
  font-size: 0.75rem;
  color: white;
