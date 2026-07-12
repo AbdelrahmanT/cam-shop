@@ -1,13 +1,13 @@
 # Frontend Take-Home: Bundle Builder
 ## Running instructions
 
-Project WebLink: https://cam-shop-amber.vercel.app/
 <ol>
 <li>Clone this repository.</li>
 <li>Open Terminal and CD to cam-shop-frontend.</li>
 <li>Install dependencies: <code>npm install</code>.</li>
 <li>Run development server <code>npm run dev</code> </li>
 </ol>
+Project WebLink: https://cam-shop-amber.vercel.app/
 
 ## Tech Stack decisions
 Frontend: React.js <br>
