@@ -1,5 +1,4 @@
 # Frontend Take-Home: Bundle Builder
-
 ## Running instructions
 
 <ol>
@@ -8,6 +7,7 @@
 <li>Install dependencies: <code>npm install</code>.</li>
 <li>Run development server <code>npm run dev</code> </li>
 </ol>
+Project WebLink: https://cam-shop-amber.vercel.app/
 
 ## Tech Stack decisions
 Frontend: React.js <br>
