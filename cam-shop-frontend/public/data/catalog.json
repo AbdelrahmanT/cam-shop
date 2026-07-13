@@ -36,6 +36,7 @@
         "id": "cam-flood-v2",
         "title": "Wyze Cam Floodlight v2",
         "description": "2K floodlight camera with a 160° wide-angle view for your garage.",
+        "badge": "Save 23%",
         "price": 69.98,
         "oldPrice": 89.98,
         "variants": [
@@ -76,6 +77,7 @@
         "id": "cam-unlimited",
         "description": "Cam Unlimited offers you unlimited customer support.",
         "image":"/assets/images/misc/cam unlimited.png",
+        "badge": "Save 23%",
         "price": 9.99,
         "oldPrice": 12.99
       },
@@ -83,6 +85,7 @@
         "id": "cam-limited",
         "title": "Cam-Limited",
         "description": "Basic plan with no customer support.",
+        "badge": "Save 50%",
         "price": 5,
         "oldPrice": 10
       }
